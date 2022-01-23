@@ -20,7 +20,7 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-        >　
+        >
           {props.date}
         </TimelineOppositeContent>
         <TimelineSeparator>
