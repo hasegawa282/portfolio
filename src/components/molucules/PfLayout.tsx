@@ -1,28 +1,28 @@
-import Head from 'next/head';
-import Link from 'next/link';
 import { ReactNode } from 'react';
+import TopMenu from './TopMenu'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import ContentArea from 'components/atoms/ContentArea';
 
 type Props = {
     children?: ReactNode;
 };
 
+const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#1976d2',
+      },
+    },
+  });
+
 const Layout = ({ children }: Props) => {
     return (
-        <div>
-            <Head>
-                <title>MyTemplate</title>
-            </Head>
-
-            <header className=''>
-                <Link href='/'>
-                    <a>Home</a>
-                </Link>
-            </header>
-
-            <div className='content'>{children}</div>
-
-            <footer className=''></footer>
-        </div>
+        <ThemeProvider theme={darkTheme}>
+            <TopMenu />
+            <ContentArea>{children}</ContentArea>
+            <footer ></footer>
+        </ThemeProvider>
     );
 };
 

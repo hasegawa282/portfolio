@@ -8,12 +8,23 @@
     "lint": "next lint --dir src",
     "lint:fix": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
     "format": "prettier --write --ignore-path .gitignore \"src/**/*.{ts,tsx,js,jsx,json,css,scss}\"",
-      "test-all": "run-s lint format lint:fix"
+    "test-all": "run-s lint format lint:fix"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.3.0",
+    "@mui/lab": "^5.0.0-alpha.65",
+    "@mui/material": "^5.3.0",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styled-engine-sc": "^5.3.0",
+    "@types/styled-components": "^5.1.21",
     "next": "12.0.8",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "devDependencies": {
     "@types/node": "17.0.10",
