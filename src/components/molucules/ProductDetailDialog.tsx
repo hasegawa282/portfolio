@@ -10,16 +10,21 @@ export interface ProductDetailDialogProps extends PfDialogProps {
     link?: string;
 };
 
-const ProductDetailDialog: React.FC<ProductDetailDialogProps> = (props) =>  {
+const ProductDetailDialog: React.FC<ProductDetailDialogProps> = (props) => {
 
-  return (
-    <PfDialog {...props} is_white={true} children={<StyledChildren>
-        <Img src={props.src}/>
-        <StyledText>{props.text}</StyledText>
-        {props.link && <PfA href={props.link} text="リンク先" out_link={true}/>}
-        <StyledText>使用スキル：{props.skill_text}</StyledText>
-    </StyledChildren>}/>
-  );
+    return (
+        <PfDialog
+            {...props}
+            is_white={true}
+        >
+            <StyledChildren>
+                <Img src={props.src} />
+                <StyledText>{props.text}</StyledText>
+                {props.link && <PfA href={props.link} text="リンク先" out_link={true} />}
+                <StyledText>使用スキル：{props.skill_text}</StyledText>
+            </StyledChildren>
+        </PfDialog>
+    );
 }
 
 const StyledChildren = styled.div`
