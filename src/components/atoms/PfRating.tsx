@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { StarBorder, Star } from '@mui/icons-material'
-import { Rating, RatingProps, Box } from '@mui/material';
+import { Star } from '@mui/icons-material'
+import { Rating, RatingProps} from '@mui/material';
 
 export interface PfRatingProps extends RatingProps { };
 
