@@ -1,8 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import { Star } from '@mui/icons-material'
 import { Rating, RatingProps} from '@mui/material';
 
-export interface PfRatingProps extends RatingProps { };
+export interface PfRatingProps extends RatingProps { 
+    dam?: boolean;
+};
 
 const PfRating: React.FC<PfRatingProps> = (props) => {
 
