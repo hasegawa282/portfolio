@@ -7,6 +7,9 @@ const PfHomeArea = styled.div`
     background-image: url("/images/portfolioImg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 export default PfHomeArea;

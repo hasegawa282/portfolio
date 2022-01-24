@@ -1,16 +1,15 @@
 import PfCard from 'components/atoms/PfCard';
 import PfInformation from 'components/atoms/PfInformation';
-import PfPageArea from 'components/atoms/PfPageArea';
 import PfTitle from 'components/atoms/PfTitle';
 import PfMiniTitle from 'components/atoms/PfMiniTitle';
-import styled from 'styled-components'
 import PfTextArea from 'components/atoms/PfTextArea';
+import ParentDiv from 'components/atoms/ParentDiv';
 
 
-const PfProfilePage = () => {
+const PfProfilePage: React.FC = () => {
     return (
         <ParentDiv>
-            <PfTitle >Profile</PfTitle>
+            <PfTitle id="Profile">Profile</PfTitle>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 <PfCard is_white={true}>
                     <PfMiniTitle style={{marginBottom: 15}}>基本情報</PfMiniTitle>
@@ -19,6 +18,7 @@ const PfProfilePage = () => {
                     <PfInformation field_name='Birth Date' text_name='1999-10-17'/>
                     <PfInformation field_name='Certification' text_name='aws cloud practitioner, TOEIC870'/>
                     <PfInformation field_name='Internship' text_name='Intelligence Design(https://i-d.ai/)'/>
+                    <PfInformation field_name='Email' text_name='hasegawa.masaki.abb@gmail.com'/>
                     <PfInformation field_name='Hobbies' text_name='スキューバダイビング🤿　バスケ🏀　映画🎬'/>
                     
                 </PfCard>
@@ -34,12 +34,5 @@ const PfProfilePage = () => {
         </ParentDiv>
     );
 };
-
-const ParentDiv = styled(PfPageArea)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
 
 export default PfProfilePage;

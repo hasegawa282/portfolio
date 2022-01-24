@@ -18,8 +18,8 @@ const StyledCard = styled(Card)<{
     disabled_scroll?: boolean;
 }>`
     min-width: 350px;
-    width: 40%;
-    height: 400px;
+    width: 44%;
+    height: 450px;
     overflow: ${(p) => p.disabled_scroll ? 'hide' : 'scroll'};
     display: flex;
     flex-direction: column;

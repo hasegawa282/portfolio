@@ -28,7 +28,7 @@ const SkillCard: React.FC<SkillCardProps> = (props) => {
     }
     return (
         <StyledPfCard {..._props} is_white={true}>
-            <div>経験年数：{props.date}</div>
+            <div>経験年数：{_props.date}</div>
             <PfRating {..._props.ratingProps}/>
             <HoverText text={_props.name}/>
             <Img src={_props.src}></Img>

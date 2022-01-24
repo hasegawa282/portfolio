@@ -1,24 +1,16 @@
-import PfPageArea from 'components/atoms/PfPageArea';
+import ParentDiv from 'components/atoms/ParentDiv';
 import PfTitle from 'components/atoms/PfTitle';
-import styled from 'styled-components'
 import PfTimeLine from './PfTimeLine';
 
 
-const PfCarrierPage = () => {
+const PfCarrierPage: React.FC = () => {
     return (
         <ParentDiv>
-            <PfTitle >Carrier</PfTitle>
+            <PfTitle id="Carrier">Carrier</PfTitle>
             <PfTimeLine />
         </ParentDiv>
     );
 };
 
-const ParentDiv = styled(PfPageArea)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-`;
 
 export default PfCarrierPage;

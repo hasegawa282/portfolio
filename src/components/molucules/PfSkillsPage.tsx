@@ -1,66 +1,65 @@
-import PfPageArea from 'components/atoms/PfPageArea';
 import PfTitle from 'components/atoms/PfTitle';
-import styled from 'styled-components'
 import SkillCard from 'components/molucules/SkillCard';
+import ParentDiv from 'components/atoms/ParentDiv';
 
 const skills = [
     {
         src: "/images/javascript1.png",
-        date: '2年',
+        date: '約2年',
         value: 3,
         name: 'JavaScript',
     },
     {
         src: "/images/react.png",
-        date: '2年',
+        date: '約2年',
         value: 3,
         name: 'React',
     },
     {
         src: "/images/typescript1.png",
-        date: '2年',
+        date: '約2年',
         value: 3,
         name: 'TypeScript',
     },
     {
         src: "/images/css3.png",
-        date: '2年',
+        date: '約2年',
         value: 3,
         name: 'CSS',
     },
     {
         src: "/images/HTML5.png",
-        date: '2年',
+        date: '約2年',
         value: 3,
         name: 'HTML',
     },
     {
         src: "/images/blueprintjs1.jpeg",
-        date: '1年',
+        date: '約1年',
         value: 2,
         name: 'BlueprintJS',
     },
     {
         src: "/images/python.png",
-        date: '1年',
+        date: '約1年',
         value: 2,
         name: 'Python',
     },
     {
         src: "/images/redux1.png",
-        date: '1年',
+        date: '約1年',
         value: 2,
         name: 'Redux',
     },
     {
         src: "/images/react-router.png",
-        date: '1年',
+        date: '約1年',
         value: 2,
         name: 'React-Router',
     },
     {
         src: "/images/github.png",
-        date: '1年',
+        date: '約1年',
         value: 2,
         name: 'Github',
     },
@@ -103,10 +102,10 @@ const skills = [
 ]
 
 
-const PfSkillPage = () => {
+const PfSkillsPage: React.FC = () => {
     return (
         <ParentDiv>
-            <PfTitle >Skill</PfTitle>
+            <PfTitle id="Skills">Skills</PfTitle>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 {skills.map((skill,i) => (<SkillCard 
                 src={skill.src} 
@@ -120,11 +119,4 @@ const PfSkillPage = () => {
     );
 };
 
-const ParentDiv = styled(PfPageArea)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
-
-export default PfSkillPage;
+export default PfSkillsPage;
