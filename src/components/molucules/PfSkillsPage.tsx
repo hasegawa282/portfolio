@@ -106,6 +106,7 @@ const PfSkillsPage: React.FC = () => {
     return (
         <ParentDiv>
             <PfTitle id="Skills">Skills</PfTitle>
+            <div>IPAが公表するITスキル標準の定義に基づき(最大7)自己判断で評価しました。</div>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 {skills.map((skill,i) => (<SkillCard 
                 src={skill.src} 

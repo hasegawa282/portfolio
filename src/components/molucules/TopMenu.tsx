@@ -27,7 +27,7 @@ const TopMenu = () => {
   };
 
   return (
-    <AppBar position="fixed" color="primary" style={{height: 70}}>
+    <AppBar position="fixed" color="primary">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,7 +102,7 @@ const TopMenu = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center"><PfA href={`https://${setting}.com/hasegawa282`} disable_decoration={true} text={setting} /></Typography>
+                  <Typography textAlign="center"><PfA href={`https://${setting}.com/hasegawa282`} disable_decoration={true} text={setting} out_link={true}/></Typography>
                 </MenuItem>
               ))}
             </Menu>

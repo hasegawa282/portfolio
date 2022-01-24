@@ -12,7 +12,7 @@ const PfPaper: React.FC<PfPaperProps> = (props) => {
     _styles.backgroundColor = props.style?.backgroundColor || 'white'
     _styles.color = props.style?.color || 'black'
     _styles.width = props.style?.width || '100%'
-    // _styles.height = props.style?.height || 150
+    _styles.minWidth = props.style?.minWidth || 300
     _styles.padding = props.style?.height || '30px'
     _styles.textAlign = props.style?.textAlign || 'left'
     return (

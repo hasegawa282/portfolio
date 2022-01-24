@@ -16,7 +16,7 @@ const ProductDetailDialog: React.FC<ProductDetailDialogProps> = (props) =>  {
     <PfDialog {...props} is_white={true} children={<StyledChildren>
         <Img src={props.src}/>
         <StyledText>{props.text}</StyledText>
-        {props.link && <PfA href={props.link} text="Qiita記事" />}
+        {props.link && <PfA href={props.link} text="リンク先" out_link={true}/>}
         <StyledText>使用スキル：{props.skill_text}</StyledText>
     </StyledChildren>}/>
   );

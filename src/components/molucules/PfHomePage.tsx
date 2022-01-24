@@ -10,8 +10,8 @@ const PfHomePage: React.FC = () => {
     );
 };
 
-const CenterBlock = styled.div`
-    font-size: 5rem;
+const CenterBlock = styled.h1`
+    font-size: 3em;
     z-index: 99;
     color: white;
     padding: 10px;

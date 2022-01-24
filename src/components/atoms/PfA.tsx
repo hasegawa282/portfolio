@@ -3,11 +3,18 @@ import styled from 'styled-components'
 interface PfAProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     text: string;
     disable_decoration?:boolean;
+    out_link?: boolean;
 };
 
 const PfA: React.FC<PfAProps> = (props) => {
+    const _props = {...props}
+    if(props.out_link){
+        _props.target = "_blank"
+        _props.rel= "noopener noreferrer"
+    }
+
     return (
-        <StyledPfA {...props} target="_blank" rel="noopener noreferrer">{props.text}</StyledPfA>
+        <StyledPfA {..._props}>{props.text}</StyledPfA>
     );
 };
 

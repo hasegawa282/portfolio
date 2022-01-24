@@ -5,7 +5,7 @@ import PfTimeLine from './PfTimeLine';
 
 const PfCarrierPage: React.FC = () => {
     return (
-        <ParentDiv>
+        <ParentDiv style={{overflow: 'scroll'}}>
             <PfTitle id="Carrier">Carrier</PfTitle>
             <PfTimeLine />
         </ParentDiv>

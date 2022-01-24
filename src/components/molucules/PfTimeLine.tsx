@@ -12,7 +12,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '青森県立五所川原高校　卒業', 
-          text: ''
+          text: '卒業式では誰よりも涙を流しました。'
         }}
         icon={<HistoryEdu style={{color: 'black' }}/>}
         date="2018/3"
@@ -29,8 +29,8 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '長期インターンシップ開始', 
-          sub_title: 'Intelligence Design', 
-          text: '学業に真剣に取り組んでいたのと、33万のmacbookを購入した心意気を買われ入社します。スキル無し、リモートワークでの実務開発は非常にタフでしたが、その分得られたものは大きかったと思います。これからもフルスタックエンジニアを目指して精進させていただきます。'
+          sub_title: 'Intelligence Design Inc.', 
+          text: '学業に真剣に取り組んでいたのと、33万のmacbookを購入した心意気を買われ入社します。スキル無し、リモートワークでの実務開発は非常にタフでしたが、得られたものは大きかったと思います。今後もフルスタックエンジニアを目指して成長させていただきます。'
         }}
         icon={<LaptopMac style={{color: 'black' }}/>}
         date="2020/2"
@@ -38,7 +38,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '横浜国立大学　理工学部卒業(予定)', 
-          text: '今年の春に卒業する予定です。'
+          text: '今年の春に卒業する予定です。卒業研究では、マルチエージェントシミュレーションで電力市場を分析しておりました。'
         }}
         icon={<School/>}
         date="2022/3"
@@ -46,7 +46,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '横浜国立大学大学院　理工学府入学(予定)', 
-          text: '学業に真剣に取り組んでいたおかげで、大学院に推薦合格することができました。大学院では、情報システム分野をより深く学んでいきたいと考えています。'
+          text: '学業に真剣に取り組んでいたおかげで、大学院に推薦合格することができました。大学院では研究分野のみならず、情報システム分野もより深く学んでいきたいと考えています。'
         }}
         icon={<School style={{color: 'black' }}/>}
         date="2022/4"
