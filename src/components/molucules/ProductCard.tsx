@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
         <StyledPfCard {..._props} is_white={true}>
             <h4>{props.title}</h4>
             <SkillArea>
-                {props.skills?.map((skill) => <Img src={skill}/>)}
+                {props.skills?.map((skill,i) => <Img src={skill} key={i}/>)}
             </SkillArea>
         </StyledPfCard>
     );
