@@ -1,8 +1,6 @@
-import HoverText from 'components/atoms/HoverText';
 import * as React from 'react';
 import styled from 'styled-components'
 import PfCard, { PfCardProps } from '../atoms/PfCard';
-import PfRating, { PfRatingProps } from '../atoms/PfRating';
 
 interface ProductCardProps extends PfCardProps {
     title?: string;
@@ -12,7 +10,7 @@ interface ProductCardProps extends PfCardProps {
 };
 
 const ProductCard: React.FC<ProductCardProps> = (props) => {
-    let _props = {...props}
+    const _props = {...props}
     _props.style = {
         ..._props.style,
         height: 300,

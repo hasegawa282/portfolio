@@ -108,11 +108,12 @@ const PfSkillPage = () => {
         <ParentDiv>
             <PfTitle >Skill</PfTitle>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-                {skills.map((skill) => (<SkillCard 
+                {skills.map((skill,i) => (<SkillCard 
                 src={skill.src} 
                 ratingProps={{value: skill.value}}
                 date={skill.date}
                 name={skill.name}
+                key={i}
                 />))}
             </div>
         </ParentDiv>

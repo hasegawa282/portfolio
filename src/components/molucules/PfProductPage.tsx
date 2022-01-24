@@ -1,7 +1,6 @@
 import PfPageArea from 'components/atoms/PfPageArea';
 import PfTitle from 'components/atoms/PfTitle';
 import styled from 'styled-components'
-import SkillCard from 'components/molucules/SkillCard';
 import ProductCard from './ProductCard';
 
 const products = [
@@ -25,7 +24,7 @@ const PfProductPage = () => {
         <ParentDiv>
             <PfTitle >Product</PfTitle>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-                {products.map((product) => (<ProductCard {...product}/>))}
+                {products.map((product, i) => (<ProductCard {...product} key={i}/>))}
             </div>
         </ParentDiv>
     );

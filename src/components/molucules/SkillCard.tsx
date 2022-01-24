@@ -13,7 +13,7 @@ interface SkillCardProps extends PfCardProps {
 };
 
 const SkillCard: React.FC<SkillCardProps> = (props) => {
-    let _props = {...props}
+    const _props = {...props}
     _props.style = {
         ..._props.style,
         width: 210,
