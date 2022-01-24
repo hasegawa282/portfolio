@@ -19,7 +19,7 @@ const darkTheme = createTheme({
 const Layout = ({ children }: Props) => {
     return (
         <ThemeProvider theme={darkTheme}>
-            <TopMenu />
+            <header><TopMenu /></header>
             <ContentArea>{children}</ContentArea>
             <footer ></footer>
         </ThemeProvider>

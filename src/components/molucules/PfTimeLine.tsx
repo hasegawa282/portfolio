@@ -2,10 +2,13 @@ import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import { LaptopMac, School, HistoryEdu } from '@mui/icons-material'
 import PfTimelineItem from './PfTimelineItem';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 export default function PfTimeLine() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
   return (
-    <Timeline position="alternate" style={{width: '90%'}}>
+    <Timeline position={matches?'alternate':'right'} style={{width: '100%'}}>
       <PfTimelineItem 
         paperProps={{
           title: '青森県立五所川原高校　卒業', 

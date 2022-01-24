@@ -2,9 +2,12 @@ import * as React from 'react';
 import {Card, CardProps} from '@mui/material'
 import styled from 'styled-components'
 
-interface Props extends CardProps {is_white?: boolean};
+export interface PfCardProps extends CardProps {
+    is_white?: boolean;
+    disabled_scroll?: boolean;
+};
 
-const PfCard: React.FC<Props> = (props) => {
+const PfCard: React.FC<PfCardProps> = (props) => {
     return (
         <StyledCard {...props} />
     );
@@ -12,10 +15,12 @@ const PfCard: React.FC<Props> = (props) => {
 
 const StyledCard = styled(Card)<{
     is_white?: boolean;
+    disabled_scroll?: boolean;
 }>`
     min-width: 350px;
     width: 40%;
     height: 400px;
+    overflow: ${(p) => p.disabled_scroll ? 'hide' : 'scroll'};
     display: flex;
     flex-direction: column;
     padding: 30px;

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import PfTimeLine from './PfTimeLine';
 
 
-const PfCarrier = () => {
+const PfCarrierPage = () => {
     return (
         <ParentDiv>
             <PfTitle >Carrier</PfTitle>
@@ -21,4 +21,4 @@ const ParentDiv = styled(PfPageArea)`
     width: 100%;
 `;
 
-export default PfCarrier;
+export default PfCarrierPage;

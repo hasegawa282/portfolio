@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import PfTextArea from 'components/atoms/PfTextArea';
 
 
-const PfProfile = () => {
+const PfProfilePage = () => {
     return (
         <ParentDiv>
             <PfTitle >Profile</PfTitle>
@@ -17,8 +17,10 @@ const PfProfile = () => {
                     <PfInformation field_name='Name' text_name='長谷川正樹(はせがわまさき)'/>
                     <PfInformation field_name='University' text_name='横浜国立大学 理工学部4年'/>
                     <PfInformation field_name='Birth Date' text_name='1999-10-17'/>
-                    <PfInformation field_name='Hobbies' text_name='スキューバダイビング🤿　バスケ🏀　映画🎬'/>
+                    <PfInformation field_name='Certification' text_name='aws cloud practitioner, TOEIC870'/>
                     <PfInformation field_name='Internship' text_name='Intelligence Design(https://i-d.ai/)'/>
+                    <PfInformation field_name='Hobbies' text_name='スキューバダイビング🤿　バスケ🏀　映画🎬'/>
+                    
                 </PfCard>
                 <PfCard >
                     <PfMiniTitle style={{marginBottom: 15}}>自己紹介</PfMiniTitle>
@@ -40,4 +42,4 @@ const ParentDiv = styled(PfPageArea)`
     align-items: center;
 `;
 
-export default PfProfile;
+export default PfProfilePage;

@@ -6,6 +6,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import PfPaper, {PfPaperProps} from 'components/atoms/PfPaper';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 interface PfTimelineItemProps extends TimelineItemProps {
     paperProps: PfPaperProps;
@@ -14,12 +15,15 @@ interface PfTimelineItemProps extends TimelineItemProps {
 };
 
 const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          sx={{ m: 'auto 0'}}
           align="right"
           variant="body2"
+          width={100}
         >
           {props.date}
         </TimelineOppositeContent>
