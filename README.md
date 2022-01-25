@@ -3,4 +3,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 # portfolio
 自己紹介用のポートフォリオ
 next.jsを学びたく取り組んだ。
-スクロール式の1枚ページなためnext.jsの良さが使えてないのでページを追加しようか検討中
+スクロール式の1枚ページなためnext.jsの良さが使えていない。新規ページを追加しようか検討中...
