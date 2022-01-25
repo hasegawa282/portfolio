@@ -20,13 +20,13 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
     const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <StyledTimelineItem matches={matches}>
-        {matches ? <TimelineOppositeContent
+        {matches && <TimelineOppositeContent
           sx={{ m: 'auto 0', display: matches ? 'block' : 'inline-block'}}
           align="right"
           variant="body2"
         >
           {props.date}
-        </TimelineOppositeContent> : <Box sx={{display: 'flex', alignItems: 'center', marginRight: '5px'}}>{props.date}</Box>}
+        </TimelineOppositeContent>}
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot>
@@ -37,6 +37,7 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
         <TimelineContent>
         <PfPaper
           {...props.paperProps}
+          date={matches ? undefined : props.date}
         />
         </TimelineContent>
       </StyledTimelineItem>

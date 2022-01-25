@@ -11,6 +11,7 @@ interface ProductCardProps extends PfCardProps {
     text?: string;
     skill_text?: string;
     link?: string;
+    duration?: string;
 };
 
 const ProductCard: React.FC<ProductCardProps> = (props) => {
