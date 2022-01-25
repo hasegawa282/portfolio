@@ -33,3 +33,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # portfolio
+
+自己紹介用のポートフォリオ
+next.jsを学びたく取り組んだ。
+スクロール式の1枚ページなためnext.jsの良さが使えてないのでページを追加しようか検討中
