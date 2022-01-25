@@ -48,7 +48,7 @@ const StyledTimelineItem = styled(TimelineItem)<{
     matches?: boolean;
 }>`
     &:before{
-        content: ${(p) => (p.matches ? '' : 'none')};
+        content: ${(p) => (p.matches ? '' : 'none')} !important;
     }
 
 `;
