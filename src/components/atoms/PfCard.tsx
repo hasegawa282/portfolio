@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Card, CardProps} from '@mui/material'
 import styled from 'styled-components'
-// import { useMediaQuery, useTheme } from '@mui/material';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 export interface PfCardProps extends CardProps {
     is_white?: boolean;
@@ -9,11 +9,11 @@ export interface PfCardProps extends CardProps {
 };
 
 const PfCard: React.FC<PfCardProps> = (props) => {
-    // const theme = useTheme();
-    // const matches = useMediaQuery(useTheme().breakpoints.up('sm'));
-    // const m = matches ? 'true' : 'false'
+    const theme = useTheme();
+    const matches = useMediaQuery(useTheme().breakpoints.up('sm'));
+    const m = matches ? 'true' : 'false'
     return (
-        <StyledCard {...props} />
+        <StyledCard {...props} mathces={m} theme={undefined}/>
     );
 };
 
