@@ -3,11 +3,12 @@ import styled from 'styled-components'
 
 export interface HoverTextProps{
     text?: string;
+    can_click?: boolean;
 };
 
 const HoverText: React.FC<HoverTextProps> = (props) => {
     return (
-        <StyledParent><StyledHoverText>{props.text}</StyledHoverText></StyledParent>
+        <StyledParent><StyledHoverText can_click={props.can_click}>{props.text}</StyledHoverText></StyledParent>
     );
 };
 
@@ -29,13 +30,15 @@ const StyledParent = styled.h4`
 
 `;
 
-const StyledHoverText = styled.div`
+const StyledHoverText = styled.div<{
+    can_click?: boolean;
+}>`
     display: inline-flex;
     align-items: center;
-    background-color: white;
+    background-color: ${(p) => (p.can_click ? 'black' : 'white')};
     border: 1px solid black;
     border-radius: 4px;
-    color: black;
+    color: ${(p) => (p.can_click ? 'white' : 'black')};
     padding: 5px;
 `;
 

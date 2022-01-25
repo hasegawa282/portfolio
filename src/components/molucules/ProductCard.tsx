@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
                 {console.log(open)}
                 <h4>{props.title}</h4>
                 <Img src={props.src} />
-                <HoverText text="Please Click!" />
+                <HoverText text="Please Click!" can_click={true}/>
                 <SkillArea>
                     {props.skills?.map((skill, i) => <MiniImg src={skill} key={i} />)}
                 </SkillArea>

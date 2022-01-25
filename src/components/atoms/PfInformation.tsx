@@ -9,9 +9,9 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 const PfInformation: React.FC<Props> = (props) => {
     return (
         <Parent>
-            <Text style={{width: '30%'}}>{props.field_name}</Text>
+            <Text style={{width: '90px'}}>{props.field_name}</Text>
             <IntervalText>:</IntervalText>
-            <Text style={{width: `calc(100% - 30%)`}}>{props.text_name}</Text>
+            <Text style={{width: `calc(100% - 90px - 15px * 2 - 5px)`}}>{props.text_name}</Text>
         </Parent>
     );
 };

@@ -12,7 +12,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '青森県立五所川原高校　卒業', 
-          text: '卒業式では誰よりも涙を流しました。'
+          text: '自分の成長への近道は、地道な努力のみということを受験勉強を通して学びました。'
         }}
         icon={<HistoryEdu style={{color: 'black' }}/>}
         date="2018/3"
@@ -38,7 +38,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '横浜国立大学　理工学部卒業(予定)', 
-          text: '今年の春に卒業する予定です。卒業研究では、マルチエージェントシミュレーションで電力市場を分析しておりました。'
+          text: '卒業研究では、マルチエージェントシミュレーションで電力市場を分析しておりました。'
         }}
         icon={<School/>}
         date="2022/3"
@@ -46,7 +46,7 @@ export default function PfTimeLine() {
       <PfTimelineItem 
         paperProps={{
           title: '横浜国立大学大学院　理工学府入学(予定)', 
-          text: '学業に真剣に取り組んでいたおかげで、大学院に推薦合格することができました。大学院では研究分野のみならず、情報システム分野もより深く学んでいきたいと考えています。'
+          text: '学業に真剣に取り組んでいたおかげで、大学院に推薦合格することができました。大学院では研究分野のみならず、情報システム分野を幅広く、深く学びたいと考えています。'
         }}
         icon={<School style={{color: 'black' }}/>}
         date="2022/4"

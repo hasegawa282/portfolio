@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Card, CardProps} from '@mui/material'
 import styled from 'styled-components'
+import { useMediaQuery, useTheme } from '@mui/material';
 
 export interface PfCardProps extends CardProps {
     is_white?: boolean;
@@ -8,14 +9,17 @@ export interface PfCardProps extends CardProps {
 };
 
 const PfCard: React.FC<PfCardProps> = (props) => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up('sm'));
     return (
-        <StyledCard {...props} />
+        <StyledCard {...props} mathces={matches} />
     );
 };
 
 const StyledCard = styled(Card)<{
     is_white?: boolean;
     disabled_scroll?: boolean;
+    mathces?: boolean;
 }>`
     min-width: 350px;
     width: 44%;
@@ -24,9 +28,10 @@ const StyledCard = styled(Card)<{
     display: flex;
     flex-direction: column;
     padding: 30px;
-    margin: 30px;
+    margin: ${(p) => (p.mathces ? '15px' : '15px 0px')};
     background-color: ${(p) => p.is_white ? 'white' : 'undefined'};
     color: ${(p) => p.is_white ? 'black' : 'undefined'};
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
 `;
 
 export default PfCard;

@@ -7,7 +7,7 @@ const products = [
         title: 'ポートフォリオ',
         src: '/images/myPortfolio.png',
         skills: ["/images/typescript1.png", "/images/react.png", "/images/nextjs.png", "/images/Materil-UI.png"],
-        text: '【個人開発】Next.jsの勉強と自己紹介のためにポートフォリオサイトを作成しました。ただ、1ページ画面だとNext.jsの良さが発揮されないので、コンタクトページを加える予定です。',
+        text: '【個人開発】Next.jsの勉強と自己紹介のためにポートフォリオサイトを作成しました。ただ、1ページ画面だとNext.jsの良さが発揮されないので、何かしらのページを追加しようと検討中です。',
         skill_text: 'TypeScript, React, Next.js, Material-UI',
     },
     {
@@ -22,7 +22,7 @@ const products = [
         title: 'BlueMarlin HP(モバイル対応のみ)',
         src: '/images/bluemarlin.png',
         skills: ["/images/typescript1.png", "/images/react.png"],
-        text: '【チーム開発】サークルBlueMarlinを新入生に紹介するために作成しました。限られた期間での開発だったためモバイル端末のみ対応です。私はフロントエンドの一部を担当しました。',
+        text: '【チーム開発】所属しているサークルのBlueMarlinを新入生に紹介するために作成しました。限られた期間での開発だったためモバイル端末のみ対応です。私はフロントエンドの一部を担当しました。',
         link: 'https://blue-marlin1996.com',
         skill_text: 'TypeScript, React',
     },
@@ -33,7 +33,7 @@ const PfProductsPage: React.FC = () => {
     return (
         <ParentDiv>
             <PfTitle id="Products">Products</PfTitle>
-            <div>開発したプロダクトを記載しています。インターン先での開発プロダクトは記載できません。</div>
+            <div>開発したプロダクトを記載しています。インターン先での開発プロダクトの公表は控えさせたいただきます。</div>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 {products.map((product, i) => (<ProductCard {...product} key={i}/>))}
             </div>
