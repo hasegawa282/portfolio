@@ -10,10 +10,11 @@ export interface PfCardProps extends CardProps {
 };
 
 const PfCard: React.FC<PfCardProps> = (props) => {
-    const matches = useMediaQuery(getTheme().breakpoints.up('sm'));
+    const theme = getTheme()
+    const matches = useMediaQuery(theme.breakpoints.up('sm'));
     const m = matches ? 'true' : 'false'
     return (
-        <StyledCard {...props} mathces={m} theme={undefined}/>
+        <StyledCard {...props} mathces={m} theme={theme}/>
     );
 };
 
