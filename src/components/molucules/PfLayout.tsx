@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
 import TopMenu from './TopMenu'
-import { ThemeProvider, createTheme, Breakpoint } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ContentArea from 'components/atoms/ContentArea';
-import { useMediaQuery} from '@mui/material';
 
 type Props = {
     children?: ReactNode;
@@ -16,11 +15,6 @@ export const theme = createTheme({
     },
   },
 });
-
-export const getSizeMatches = (bp: Breakpoint) => {
-  const matches = useMediaQuery(theme.breakpoints.up(bp));
-  return matches
-}
 
 const Layout = ({ children }: Props) => {
     return (
