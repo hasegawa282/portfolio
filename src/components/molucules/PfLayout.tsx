@@ -7,18 +7,21 @@ type Props = {
     children?: ReactNode;
 };
 
-const darkTheme = createTheme({
+export const getTheme = (dark?: boolean) => {
+  const theme = createTheme({
     palette: {
-      mode: 'dark',
+      mode: dark ? 'dark' : 'light',
       primary: {
         main: '#1976d2',
       },
     },
   });
+  return theme
+}
 
 const Layout = ({ children }: Props) => {
     return (
-        <ThemeProvider theme={darkTheme}>
+        <ThemeProvider theme={getTheme(true)}>
             <header><TopMenu /></header>
             <ContentArea>{children}</ContentArea>
             <footer ></footer>
