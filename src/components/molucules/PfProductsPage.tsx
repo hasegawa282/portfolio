@@ -14,10 +14,10 @@ const products = [
     {
         title: 'レシートOCRアプリ(開発途中)',
         src: '/images/Edit7.jpg',
-        skills: ["/images/typescript1.png", "/images/react.png", "/images/aws1.png","/images/gcp.png", "/images/blueprintjs1.jpeg"],
+        skills: ["/images/typescript1.png", "/images/react.png", "/images/aws1.png","/images/gcp.png", "/images/bootstrap.png"],
         text: '【個人開発】レシートの商品を購入者で分割したかったが、一般のOCRアプリにはこの機能がなく自作しました。まだ未完成ですが詳しい進捗をQiita記事にしています。',
         link: 'https://qiita.com/hasegawa282/items/a839a4930cdb1125d4d6',
-        skill_text: 'TypeScript, React, BlueprintJs, Python, AWS, Google Vision API',
+        skill_text: 'TypeScript, React, bootstrapJs, Python, AWS, Google Vision API',
         duration: '2021-10 ~ now',
     },
     {
