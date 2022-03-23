@@ -1,5 +1,5 @@
 import PfTitle from 'components/atoms/PfTitle';
-import ProductCard from './ProductCard';
+import ProductCard from '../molucules/ProductCard';
 import ParentDiv from 'components/atoms/ParentDiv';
 
 const products = [

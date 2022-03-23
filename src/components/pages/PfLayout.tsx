@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import TopMenu from './TopMenu'
+import TopMenu from '../molucules/TopMenu'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ContentArea from 'components/atoms/ContentArea';
 

@@ -1,6 +1,6 @@
 import ParentDiv from 'components/atoms/ParentDiv';
 import PfTitle from 'components/atoms/PfTitle';
-import PfTimeLine from './PfTimeLine';
+import PfTimeLine from '../molucules/PfTimeLine';
 
 
 const PfCarrierPage: React.FC = () => {
