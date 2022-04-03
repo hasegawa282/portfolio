@@ -12,7 +12,7 @@ const products = [
         duration: '2022-1-24 ~ 2022-1-26',
     },
     {
-        title: 'レシートOCRアプリ(開発途中)',
+        title: 'レシートOCRアプリ',
         src: '/images/Edit7.jpg',
         skills: ["/images/typescript1.png", "/images/react.png", "/images/aws1.png","/images/gcp.png", "/images/bootstrap.png"],
         text: '【個人開発】レシートの商品を購入者で分割したかったが、一般のOCRアプリにはこの機能がなく自作しました。まだ未完成ですが詳しい進捗をQiita記事にしています。',
@@ -28,6 +28,15 @@ const products = [
         link: 'https://blue-marlin1996.com',
         skill_text: 'TypeScript, React',
         duration: '2020-3-27 ~ 2020-4-9',
+    },
+    {
+        title: 'Mottainai(開発途中)',
+        src: '/images/mottainai.png',
+        skills: ["/images/flutter1.png", "/images/firebase.png"],
+        text: '【チーム開発】Sollution Challenge 2022に向けた開発です。SDGsのフードロスをテーマとしています。私は技術管理者として、設計、開発などを担当しています。',
+        link: 'https://sc-ynu-2022.web.app/',
+        skill_text: 'Flutter, Firebase',
+        duration: '2022-3 ~ 現在',
     },
 ]
 

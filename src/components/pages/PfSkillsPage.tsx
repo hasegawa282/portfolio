@@ -99,6 +99,12 @@ const skills = [
         value: 1,
         name: 'NextJS',
     },
+    {
+        src: "/images/firebase.png",
+        date: '1年未満',
+        value: 1,
+        name: 'Fire',
+    },
 ]
 
 
