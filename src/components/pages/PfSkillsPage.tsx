@@ -103,7 +103,7 @@ const skills = [
         src: "/images/firebase.png",
         date: '1年未満',
         value: 1,
-        name: 'Fire',
+        name: 'Firebase',
     },
 ]
 
