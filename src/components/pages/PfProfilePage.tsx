@@ -14,7 +14,7 @@ const PfProfilePage: React.FC = () => {
                 <PfCard is_white={true}>
                     <PfMiniTitle style={{marginBottom: 15}}>基本情報</PfMiniTitle>
                     <PfInformation field_name='Name' text_name='長谷川正樹(はせがわまさき)'/>
-                    <PfInformation field_name='University' text_name='横浜国立大学 理工学部4年'/>
+                    <PfInformation field_name='University' text_name='横浜国立大学大学院 理工学府 情報システム教育分野 1年'/>
                     <PfInformation field_name='Birth Date' text_name='1999-10-17'/>
                     <PfInformation field_name='Certification' text_name='aws cloud practitioner, TOEIC870'/>
                     <PfInformation field_name='Internship' text_name='Intelligence Design(https://i-d.ai/)'/>
