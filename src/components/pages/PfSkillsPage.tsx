@@ -5,31 +5,31 @@ import ParentDiv from 'components/atoms/ParentDiv';
 const skills = [
     {
         src: "/images/javascript1.png",
-        date: '2年',
-        value: 3,
+        date: '2.5年',
+        value: 4,
         name: 'JavaScript',
     },
     {
         src: "/images/react.png",
-        date: '2年',
-        value: 3,
+        date: '2.5年',
+        value: 4,
         name: 'React',
     },
     {
         src: "/images/typescript1.png",
-        date: '2年',
-        value: 3,
+        date: '2.5年',
+        value: 4,
         name: 'TypeScript',
     },
     {
         src: "/images/css3.png",
-        date: '2年',
+        date: '2.5年',
         value: 3,
         name: 'CSS',
     },
     {
         src: "/images/HTML5.png",
-        date: '2年',
+        date: '2.5年',
         value: 3,
         name: 'HTML',
     },
@@ -41,25 +41,25 @@ const skills = [
     },
     {
         src: "/images/python.png",
-        date: '2.5年',
-        value: 2,
+        date: '3年',
+        value: 3,
         name: 'Python',
     },
     {
         src: "/images/redux1.png",
-        date: '約1年',
+        date: '1年',
         value: 2,
         name: 'Redux',
     },
     {
         src: "/images/react-router.png",
-        date: '約1年',
+        date: '1年',
         value: 2,
         name: 'React-Router',
     },
     {
         src: "/images/github.png",
-        date: '約1年',
+        date: '1.5年',
         value: 2,
         name: 'Github',
     },
@@ -90,7 +90,7 @@ const skills = [
     {
         src: "/images/aws1.png",
         date: '1年未満',
-        value: 1,
+        value: 2,
         name: 'AWS',
     },
     {
@@ -105,16 +105,27 @@ const skills = [
         value: 1,
         name: 'Firebase',
     },
+    {
+        src: "/images/gopher.png",
+        date: '1年未満',
+        value: 1,
+        name: 'Go',
+    },
 ]
 
 
 const PfSkillsPage: React.FC = () => {
+    const sorted_skills = skills.sort((a, b) => {
+        if(a.value < b.value) return 1
+        if(a.value > b.value) return -1
+        return 0
+    })
     return (
         <ParentDiv>
             <PfTitle id="Skills">Skills</PfTitle>
             <div>IPAが公表するITスキル標準の定義に基づき(最大7)自己判断で評価しました。</div>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
-                {skills.map((skill,i) => (<SkillCard 
+                {sorted_skills.map((skill,i) => (<SkillCard 
                 src={skill.src} 
                 ratingProps={{value: skill.value}}
                 date={skill.date}

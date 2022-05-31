@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import { LaptopMac, School, HistoryEdu } from '@mui/icons-material'
+import { LaptopMac, School, HistoryEdu, Keyboard } from '@mui/icons-material'
 import PfTimelineItem from './PfTimelineItem';
 import { useMediaQuery, useTheme } from '@mui/material';
 
@@ -50,6 +50,14 @@ export default function PfTimeLine() {
         }}
         icon={<School style={{color: 'black' }}/>}
         date="2022/4"
+      />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'ハッカソン[BIPROGY DX HACK 2022]', 
+          text: '人生初のハッカソンに参加しました。テックリードとして、チームに開発環境を共有し、最終的に「英語禁止ゲーム」を搭載させたビデオ通話アプリケーションを開発しました。チームメンバーに恵まれたおかげで、前代未聞の3冠【最優秀賞、オーディエンス賞、kintone賞】を受賞できました。'
+        }}
+        icon={<Keyboard/>}
+        date="2022/5"
       />
     </Timeline>
   );
