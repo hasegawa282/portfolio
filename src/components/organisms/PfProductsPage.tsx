@@ -18,7 +18,7 @@ const products = [
         text: '【個人開発】レシートの商品を購入者で分割したかったが、一般のOCRアプリにはこの機能がなく自作しました。詳しい進捗をQiita記事にしています。',
         link: 'https://qiita.com/hasegawa282/items/a839a4930cdb1125d4d6',
         skill_text: 'TypeScript, React, bootstrapJs, Python, AWS, Google Vision API',
-        duration: '2021-10 ~ now',
+        duration: '2021-10 ~ 2021-11',
     },
     {
         title: 'BlueMarlin HP(モバイル対応のみ)',
