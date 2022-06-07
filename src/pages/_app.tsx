@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import 'styles/globals.css';
-import PfLayout from 'components/pages/PfLayout';
+import PfLayout from 'components/organisms/PfLayout';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
