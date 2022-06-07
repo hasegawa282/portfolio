@@ -41,10 +41,10 @@ const products = [
     {
         title: 'YOU KInD OK(ゆきどけ)',
         src: '/images/yukidoke.png',
-        skills: ["/images/typescript1.png", "/images/react.png", "/images/gopher.png"],
+        skills: ["/images/typescript1.png", "/images/react.png"],
         text: '【チーム開発】BIPROGYが開催する、ハッカソン[BIPROGY DX HACK]で開発したプロダクトです。twilioを利用してビデオ通話アプリケーションの基盤を作成し、そこにリアルタイム音声認識を利用した「英語禁止ゲーム」を搭載しました。また、kintoneとHerokeから作成したAPIにより、簡単なアンケートを作成/実施/貯蔵できます。これらの機能を利用したアイスブレイクにより、オンラインミーティング特有の固い雰囲気を解きほぐします。チームメンバーに恵まれたこと、常に最悪のケースを想定しながら開発したことが功をなし、前代未聞の3冠「最優秀賞、オーディエンス賞、kintone賞」を受賞しました。',
         link: 'https://pr.biprogy.com/recruit/hackathon/index_hackason.html',
-        skill_text: 'TS, React, Go',
+        skill_text: 'TS, React',
         duration: '2022-5-28 ~ 2022-5-29',
     },
 ]
