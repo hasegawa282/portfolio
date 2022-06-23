@@ -59,6 +59,15 @@ export default function PfTimeLine() {
         icon={<Keyboard/>}
         date="2022/5"
       />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'Sprinters', 
+          sub_title: 'パーソルキャリア', 
+          text: 'ユーザーニーズ検証から、プロトタイプ開発まで経験できるインターンシップに参加しました。ユーザーが本当に求める物を提供するためのUI/UXや、ビジネス観点でのサービス開発など、普段ではなかなか携われない部分を経験できました。チームメンバーに恵まれたおかげで、【最優秀賞】を受賞できました。'
+        }}
+        icon={<Keyboard/>}
+        date="2022/5"
+      />
     </Timeline>
   );
 }
