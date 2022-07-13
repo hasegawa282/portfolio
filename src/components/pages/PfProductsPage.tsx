@@ -58,7 +58,7 @@ const products = [
         type: 'VIDEO',
         skills: ["/images/typescript1.png", "/images/react.png", "/images/azure.png"],
         text: '【チーム開発】KDDIが開催する、ハッカソン[KDGHACKS 2022]で開発したプロダクトです。Azure Functionsを利用してサーバーレスAPIを作成し、Static Web AppsによりCI/CDを組み込みホスティングしました。「夏休みの予定が立てづらい」、「宿題の予定管理が難しい」そんな悩みを「夏休みガチャ」は解消します。自分の好きなイベントが来るまでリセマラしても良いかもしれませんね!チームメンバーに恵まれたおかげで、【優秀賞(3位)】を受賞できました。',
-        link: 'https://pr.biprogy.com/recruit/hackathon/index_hackason.html',
+        link: 'https://techplay.jp/event/859098',
         skill_text: 'TS, React, Azure',
         duration: '2022-7-9 ~ 2022-7-10',
     },
