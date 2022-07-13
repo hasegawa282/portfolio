@@ -6,6 +6,7 @@ import PfA from 'components/atoms/PfA';
 export interface ProductDetailDialogProps extends PfDialogProps {
     src?: string;
     text?: string;
+    type: string;
     skill_text?: string;
     link?: string;
     duration?: string;
@@ -19,7 +20,8 @@ const ProductDetailDialog: React.FC<ProductDetailDialogProps> = (props) => {
             is_white={true}
         >
             <StyledChildren>
-                <Img src={props.src} />
+                {props.type === 'IMAGE' && <Img src={props.src} />}
+                {props.type === 'VIDEO' && <Video src={props.src} muted={true} controls={true}/>}
                 <StyledText>{props.text}</StyledText>
                 {props.link && <PfA href={props.link} text="リンク先" out_link={true} />}
                 <StyledText>開発期間：{props.duration}</StyledText>
@@ -35,6 +37,13 @@ const StyledChildren = styled.div`
 `;
 
 const Img = styled.img`
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 10px;
+`;
+
+const Video = styled.video`
     width: 100%;
     height: auto;
     max-width: 100%;

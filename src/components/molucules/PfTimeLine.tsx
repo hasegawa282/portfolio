@@ -8,7 +8,7 @@ export default function PfTimeLine() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('md'));
   return (
-    <Timeline position={matches?'alternate':'right'} style={{width: '100%'}}>
+    <Timeline position={matches ? 'alternate' : 'right'} style={{width: '100%'}}>
       <PfTimelineItem 
         paperProps={{
           title: '青森県立五所川原高校　卒業', 
@@ -53,7 +53,7 @@ export default function PfTimeLine() {
       />
       <PfTimelineItem 
         paperProps={{
-          title: 'ハッカソン[BIPROGY DX HACK 2022]', 
+          title: 'BIPROGY DX HACK 2022', 
           sub_title: 'BIPROGY', 
           text: '人生初のハッカソンに参加しました。テックリードとして、チームに開発環境を共有し、「リアルタイム音声認識による英語禁止ゲーム」を搭載しました。最終的なプロダクトとしては、「リアルタイム音声認識による英語禁止ゲーム」と「アンケート機能」を搭載させたビデオ通話アプリケーションを開発しました。チームメンバーに恵まれたおかげで、前代未聞の3冠【最優秀賞、オーディエンス賞、kintone賞】を受賞できました。'
         }}
@@ -66,8 +66,17 @@ export default function PfTimeLine() {
           sub_title: 'パーソルキャリア', 
           text: 'ユーザーニーズ検証から、プロトタイプ開発まで経験できるインターンシップに参加しました。ユーザーが本当に求める物を提供するためのUI/UXや、ビジネス観点でのサービス開発など、普段ではなかなか携われない部分を経験できました。チームメンバーに恵まれたおかげで、【最優秀賞】を受賞できました。'
         }}
-        icon={<Keyboard/>}
+        icon={<Keyboard style={{color: 'black'}}/>}
         date="2022/6"
+      />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'KDGHACKS 2022 SUMMER', 
+          sub_title: 'KDDI', 
+          text: 'KDDIが開催するハッカソンに参加しました。テックリードとして、React×Azure開発環境を作成・共有したり、WBSを引きチームの開発を円滑に進めるようにしました。機能面では「ランダムにイベントを生成するAPI」や「フロントエンドのAPI呼び出し部分」などを開発し、最終的なプロダクトとしては、夏休みの予定をガチャガチャのようにランダムに生成する、「夏休みガチャ予定作成アプリケーション」を開発しました。チームメンバーに恵まれたおかげで、【優秀賞(3位)】を受賞できました。'
+        }}
+        icon={<Keyboard/>}
+        date="2022/7"
       />
     </Timeline>
   );

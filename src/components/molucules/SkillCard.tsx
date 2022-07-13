@@ -9,7 +9,7 @@ interface SkillCardProps extends PfCardProps {
     src?: string;
     date?: string;
     name?: string;
-    ratingProps: PfRatingProps;
+    rating_props: PfRatingProps;
 };
 
 const SkillCard: React.FC<SkillCardProps> = (props) => {
@@ -29,7 +29,7 @@ const SkillCard: React.FC<SkillCardProps> = (props) => {
     return (
         <StyledPfCard {..._props} is_white={true}>
             <div>経験年数：{_props.date}</div>
-            <PfRating {..._props.ratingProps}/>
+            <PfRating {..._props.rating_props}/>
             <HoverText text={_props.name}/>
             <Img src={_props.src}></Img>
         </StyledPfCard>

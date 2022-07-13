@@ -7,6 +7,7 @@ import ProductDetailDialog from './ProductDetailDialog';
 interface ProductCardProps extends PfCardProps {
     title?: string;
     src?: string;
+    type: string;
     skills?: string[];
     text?: string;
     skill_text?: string;
@@ -30,9 +31,9 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
     return (
         <>
             <StyledPfCard {..._props} is_white={true} onClick={() => setOpen(true)}>
-                {console.log(open)}
                 <h4>{props.title}</h4>
-                <Img src={props.src} />
+                {props.type === 'IMAGE' && <Img src={props.src} />}
+                {props.type === 'VIDEO' && <Video src={props.src} muted={true} controls={false} autoPlay={true}/>}
                 <HoverText text="Please Click!" can_click={true}/>
                 <SkillArea>
                     {props.skills?.map((skill, i) => <MiniImg src={skill} key={i} />)}
@@ -59,6 +60,13 @@ const StyledPfCard = styled(PfCard)`
 
 `;
 const Img = styled.img`
+    width: auto;
+    height: 150px;
+    max-width: 100%;
+    margin-top: 10px;
+`;
+
+const Video = styled.video`
     width: auto;
     height: 150px;
     max-width: 100%;

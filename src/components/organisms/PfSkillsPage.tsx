@@ -111,6 +111,12 @@ const skills = [
         value: 1,
         name: 'Go',
     },
+    {
+        src: "/images/azure.png",
+        date: '1年未満',
+        value: 1,
+        name: 'Azure',
+    },
 ]
 
 
@@ -127,7 +133,7 @@ const PfSkillsPage: React.FC = () => {
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 {sorted_skills.map((skill,i) => (<SkillCard 
                 src={skill.src} 
-                ratingProps={{value: skill.value}}
+                rating_props={{value: skill.value}}
                 date={skill.date}
                 name={skill.name}
                 key={i}
