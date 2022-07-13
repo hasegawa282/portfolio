@@ -5,4 +5,8 @@ const ContentArea = styled.div`
     overflow: hidden;
 `;
 
+export const BoldText = styled.div`
+    font-weight: bold;
+`;
+
 export default ContentArea
