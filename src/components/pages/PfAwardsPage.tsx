@@ -20,6 +20,10 @@ const awards: PfAwardProps[] = [
         text: 'BIPROGY DX HACK 2022【kintone賞】'
     },
     {
+        date: '2022-6-19',
+        text: 'Sprinters 2022【最優秀賞】'
+    },
+    {
         date: '2022-7-8',
         text: 'KDGHACKS 2022 SUMMER【優秀賞】'
     }
