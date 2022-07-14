@@ -4,7 +4,7 @@ import PfTitle from 'components/atoms/PfTitle';
 
 const awards: PfAwardProps[] = [
     {
-        date: '2021-2-16',
+        date: '2022-2-16',
         text: '2021年度 第11回 電気学会東京支部神奈川支所 研究会【優秀発表賞】'
     },
     {
