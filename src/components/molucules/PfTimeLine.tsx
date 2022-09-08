@@ -78,6 +78,24 @@ export default function PfTimeLine() {
         icon={<Keyboard/>}
         date="2022/7"
       />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'BIPROGY SUMMER INTERNSHIP', 
+          sub_title: 'BIPROGY', 
+          text: 'BIPROGYが開催するインターンシップに参加しました。フロントエンドを担当し、日々ユーザーが利用するサービスの開発のため、毎日使っていても飽きないデザインを意識しました。メンバーに恵まれたおかげで【最優秀賞】を獲得できました。'
+        }}
+        icon={<Keyboard style={{color: 'black'}}/>}
+        date="2022/8"
+      />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'SONY 職業密着型インターンシップ', 
+          sub_title: 'SONY', 
+          text: '2週間のインターンシップに参加しました。'
+        }}
+        icon={<Keyboard/>}
+        date="2022/9"
+      />
     </Timeline>
   );
 }

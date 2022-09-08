@@ -26,6 +26,10 @@ const awards: PfAwardProps[] = [
     {
         date: '2022-7-8',
         text: 'KDGHACKS 2022 SUMMER【優秀賞】'
+    },
+    {
+        date: '2022-8',
+        text: 'BIPROGY SUMMER INTERNSHIP【最優秀賞】'
     }
 ]
 
