@@ -89,8 +89,8 @@ const skills = [
     },
     {
         src: "/images/aws1.png",
-        date: '1年未満',
-        value: 2,
+        date: '1年',
+        value: 3,
         name: 'AWS',
     },
     {

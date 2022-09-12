@@ -91,7 +91,16 @@ export default function PfTimeLine() {
         paperProps={{
           title: 'SONY 職業密着型インターンシップ', 
           sub_title: 'SONY', 
-          text: '2週間のインターンシップに参加しました。'
+          text: '2週間のインターンシップに参加しました。秘密保持契約のため詳細に関しては記載できませんが、非常に勉強になるインターンシップでした。'
+        }}
+        icon={<Keyboard/>}
+        date="2022/9"
+      />
+      <PfTimelineItem 
+        paperProps={{
+          title: 'Autumn Hackathon', 
+          sub_title: 'DeNA', 
+          text: 'DeNA開催のハッカソンに参加しました。フロントエンドを担当しました。短い期間の開発でもアイデアで開発コストを抑えることで、プロダクトを開発できることを身を持って経験しました。メンバーに恵まれたおかげで【優勝】することができました。'
         }}
         icon={<Keyboard/>}
         date="2022/9"

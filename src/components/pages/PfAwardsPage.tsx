@@ -30,6 +30,10 @@ const awards: PfAwardProps[] = [
     {
         date: '2022-8',
         text: 'BIPROGY SUMMER INTERNSHIP【最優秀賞】'
+    },
+    {
+        date: '2022-9-11',
+        text: 'DeNA Autumn Hackathon【優勝】'
     }
 ]
 
