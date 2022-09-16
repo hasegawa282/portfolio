@@ -102,6 +102,15 @@ export default function PfTimeLine() {
           sub_title: 'DeNA', 
           text: 'DeNA開催のハッカソンに参加しました。フロントエンドを担当しました。短い期間の開発でもアイデアで開発コストを抑えることで、プロダクトを開発できることを身を持って経験しました。メンバーに恵まれたおかげで【優勝】することができました。'
         }}
+        icon={<Keyboard style={{color: 'black'}}/>}
+        date="2022/9"
+      />
+      <PfTimelineItem 
+        paperProps={{
+          title: '夏の陣2022 アプリケーション開発', 
+          sub_title: 'Rakuten', 
+          text: 'Rakutenのインターンシップに参加しました。ドライブなどの移動中に、その場所特有の話題を提供してくれるwebアプリケーションを開発しました。受賞はできませんでしたが、英語のプレゼン、google react mapsの利用など非常に成長できるインターンでした。'
+        }}
         icon={<Keyboard/>}
         date="2022/9"
       />
