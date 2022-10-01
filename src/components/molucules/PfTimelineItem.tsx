@@ -11,7 +11,8 @@ import { useMediaQuery, useTheme } from '@mui/material';
 
 interface PfTimelineItemProps extends TimelineItemProps {
     paperProps: PfPaperProps;
-    date: string;
+    dateStart: string;
+    dateEnd?: string;
     icon?: React.ReactNode;
 };
 
@@ -25,7 +26,8 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
           align="right"
           variant="body2"
         >
-          {props.date}
+          {props.dateStart}
+          {props.dateEnd && `~${props.dateEnd}`}
         </TimelineOppositeContent>}
         <TimelineSeparator>
           <TimelineConnector />
@@ -37,7 +39,8 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
         <TimelineContent>
         <PfPaper
           {...props.paperProps}
-          date={matches ? undefined : props.date}
+          dateStart={matches ? undefined : props.dateStart}
+          dateEnd={matches ? undefined : props.dateEnd}
         />
         </TimelineContent>
       </StyledTimelineItem>

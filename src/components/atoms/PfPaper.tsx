@@ -5,7 +5,8 @@ export interface PfPaperProps extends PaperProps {
     title?: string;
     sub_title?: string;
     text?: string;
-    date?: string;
+    dateStart?: string;
+    dateEnd?: string;
 };
 
 const PfPaper: React.FC<PfPaperProps> = (props) => {
@@ -25,7 +26,7 @@ const PfPaper: React.FC<PfPaperProps> = (props) => {
               {props.sub_title}
             </Typography>
             <Typography>{props.text}</Typography>
-            {props.date && <Typography sx={{marginTop: 1}} >{props.date}</Typography>}
+            {props.dateStart && <Typography sx={{marginTop: 1}} >{props.dateStart}{props.dateEnd && `~${props.dateEnd}`}</Typography>}
         </Paper>
     );
 };

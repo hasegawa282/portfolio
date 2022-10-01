@@ -35,8 +35,8 @@ const skills = [
     },
     {
         src: "/images/blueprintjs1.jpeg",
-        date: '1年',
-        value: 2,
+        date: '2年',
+        value: 3,
         name: 'BlueprintJS',
     },
     {
@@ -53,13 +53,13 @@ const skills = [
     },
     {
         src: "/images/react-router.png",
-        date: '1年',
-        value: 2,
+        date: '2年',
+        value: 3,
         name: 'React-Router',
     },
     {
         src: "/images/github.png",
-        date: '1.5年',
+        date: '2年',
         value: 2,
         name: 'Github',
     },
@@ -77,8 +77,8 @@ const skills = [
     },
     {
         src: "/images/flutter1.png",
-        date: '1年未満',
-        value: 1,
+        date: '3ヶ月',
+        value: 2,
         name: 'Flutter',
     },
     {
@@ -107,8 +107,8 @@ const skills = [
     },
     {
         src: "/images/gopher.png",
-        date: '1年未満',
-        value: 1,
+        date: '2ヶ月',
+        value: 2,
         name: 'Go',
     },
     {
@@ -117,10 +117,16 @@ const skills = [
         value: 1,
         name: 'Azure',
     },
+    {
+        src: "/images/dart.png",
+        date: '3ヶ月',
+        value: 2,
+        name: 'Dart',
+    },
 ]
 
 
-const PfSkillsPage: React.FC = () => {
+const PfSkillsPage = () => {
     const sorted_skills = skills.sort((a, b) => {
         if(a.value < b.value) return 1
         if(a.value > b.value) return -1
