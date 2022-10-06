@@ -3,7 +3,7 @@ import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, B
 import MenuIcon from '@mui/icons-material/Menu';
 import PfA from 'components/atoms/PfA';
 
-const pages = ['Home', 'Profile', 'Carrier', 'Skills', 'Products'];
+const pages = ['Home', 'Profile', 'Awards', 'Carrier', 'Skills', 'Products'];
 const settings = ['github', 'qiita'];
 
 const TopMenu = () => {
