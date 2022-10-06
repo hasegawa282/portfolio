@@ -20,7 +20,7 @@ const StyledCard = styled(Card)<{
 }>`
     min-width: 350px;
     width: 44%;
-    height: 450px;
+    min-height: 450px;
     overflow: ${(p) => p.disabled_scroll ? 'hide' : 'scroll'};
     display: flex;
     flex-direction: column;
