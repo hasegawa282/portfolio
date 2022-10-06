@@ -16,9 +16,8 @@ const PfProfilePage: React.FC = () => {
                     <PfInformation field_name='Name' text_name='長谷川正樹(はせがわまさき)'/>
                     <PfInformation field_name='University' text_name='横浜国立大学大学院 理工学府 情報システム教育分野 1年'/>
                     <PfInformation field_name='Birth Date' text_name='1999-10-17'/>
-                    <PfInformation field_name='Certification' text_name='AWS SAA, AWS CLP, TOEIC870'/>
+                    <PfInformation field_name='Certification' text_name='AWS SAA, AWS CLF, TOEIC870'/>
                     <PfInformation field_name='Internship' text_name='Intelligence Design(https://i-d.ai/)'/>
-                    <PfInformation field_name='Email' text_name='hasegawa.masaki.abb@gmail.com'/>
                     <PfInformation field_name='Hobbies' text_name='スキューバダイビング🤿　バスケ🏀　映画🎬'/>
                     
                 </PfCard>
