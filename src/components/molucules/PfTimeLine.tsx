@@ -8,7 +8,7 @@ export default function PfTimeLine() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('md'));
   return (
-    <Timeline position={matches ? 'alternate' : 'right'} style={{width: '100%'}}>
+    <Timeline position={matches ? 'alternate' : 'right'}>
       <PfTimelineItem 
         paperProps={{
           title: '青森県立五所川原高校　卒業', 
