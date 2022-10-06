@@ -19,8 +19,6 @@ const StyledCard = styled(Card)<{
     mathces?: string;
 }>`
     min-width: 350px;
-    width: 44%;
-    min-height: 450px;
     overflow: ${(p) => p.disabled_scroll ? 'hide' : 'scroll'};
     display: flex;
     flex-direction: column;
