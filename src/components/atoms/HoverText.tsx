@@ -1,17 +1,18 @@
 import * as React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export interface HoverTextProps{
+export interface HoverTextProps {
     text?: string;
     can_click?: boolean;
-};
+}
 
 const HoverText: React.FC<HoverTextProps> = (props) => {
     return (
-        <StyledParent><StyledHoverText can_click={props.can_click}>{props.text}</StyledHoverText></StyledParent>
+        <StyledParent>
+            <StyledHoverText can_click={props.can_click}>{props.text}</StyledHoverText>
+        </StyledParent>
     );
 };
-
 
 const StyledParent = styled.h4`
     width: 100%;
@@ -27,7 +28,6 @@ const StyledParent = styled.h4`
         opacity: 1;
     }
     z-index: 99;
-
 `;
 
 const StyledHoverText = styled.div<{

@@ -1,17 +1,17 @@
 import * as React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
     field_name: string;
     text_name: string;
-};
+}
 
 const PfInformation: React.FC<Props> = (props) => {
     return (
         <Parent>
-            <Text style={{width: '90px'}}>{props.field_name}</Text>
+            <Text style={{ width: '90px' }}>{props.field_name}</Text>
             <IntervalText>:</IntervalText>
-            <Text style={{width: `calc(100% - 90px - 15px * 2 - 5px)`}}>{props.text_name}</Text>
+            <Text style={{ width: `calc(100% - 90px - 15px * 2 - 5px)` }}>{props.text_name}</Text>
         </Parent>
     );
 };

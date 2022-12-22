@@ -8,18 +8,15 @@ import PfAwardsPage from 'components/pages/PfAwardsPage';
 
 const Home: NextPage = () => {
     return (
-        <div style={{width: '100%', display: 'block'}}>
-            <PfHomePage/>
+        <div style={{ width: '100%', display: 'block' }}>
+            <PfHomePage />
             <PfProfilePage />
             <PfAwardsPage />
             <PfCarrierPage />
             <PfSkillsPage />
             <PfProductsPage />
         </div>
-        
     );
 };
-
-
 
 export default Home;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import PfPageArea from './PfPageArea';
 
 const ParentDiv = styled(PfPageArea)`
@@ -10,4 +10,4 @@ const ParentDiv = styled(PfPageArea)`
     padding-top: 70px;
 `;
 
-export default ParentDiv
+export default ParentDiv;

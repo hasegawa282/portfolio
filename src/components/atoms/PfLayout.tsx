@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import TopMenu from '../molucules/TopMenu'
+import TopMenu from '../molucules/TopMenu';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ContentArea from 'components/atoms/ContentArea';
 
@@ -8,20 +8,22 @@ type Props = {
 };
 
 export const theme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#1976d2',
+    palette: {
+        mode: 'dark',
+        primary: {
+            main: '#1976d2',
+        },
     },
-  },
 });
 
 const Layout = ({ children }: Props) => {
     return (
         <ThemeProvider theme={theme}>
-            <header><TopMenu /></header>
+            <header>
+                <TopMenu />
+            </header>
             <ContentArea>{children}</ContentArea>
-            <footer ></footer>
+            <footer></footer>
         </ThemeProvider>
     );
 };

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const ContentArea = styled.div`
     width: 100%;
@@ -9,4 +9,4 @@ export const BoldText = styled.div`
     font-weight: bold;
 `;
 
-export default ContentArea
+export default ContentArea;

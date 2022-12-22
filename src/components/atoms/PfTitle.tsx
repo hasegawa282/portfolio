@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const PfTitle = styled.h1`
     font-weight: bold;

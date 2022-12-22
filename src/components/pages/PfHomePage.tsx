@@ -1,10 +1,9 @@
 import PfHomeArea from 'components/atoms/PfHomeArea';
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 const PfHomePage: React.FC = () => {
     return (
-        <PfHomeArea id="Home">
+        <PfHomeArea id='Home'>
             <CenterBlock>Welcome to my Portfolio</CenterBlock>
         </PfHomeArea>
     );
@@ -17,6 +16,5 @@ const CenterBlock = styled.h1`
     padding: 10px;
     background-color: rgba(1, 1, 1, 0.3);
 `;
-
 
 export default PfHomePage;
