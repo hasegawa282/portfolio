@@ -18,7 +18,6 @@ const StyledCard = styled(({ isWhite, disabled_scroll, ...props }: PfCardProps) 
         background-color: ${props.isWhite ? 'white' : 'undefined'};
         color: ${props.isWhite ? 'black' : 'undefined'};
     `}
-    overflow: ${(p) => (p.disabled_scroll ? 'hide' : 'scroll')};
     display: flex;
     flex-direction: column;
     padding: 30px;
