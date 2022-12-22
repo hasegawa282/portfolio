@@ -19,7 +19,7 @@ const PfA: React.FC<PfAProps> = (props) => {
 const StyledPfA = styled.a<{
     disable_decoration?: boolean;
 }>`
-    text-decoration: ${(p) => (p.disable_decoration ? 'none' : 'underline')};
+    text-decoration: ${({ disable_decoration }) => (disable_decoration ? 'none' : 'underline')};
 `;
 
 export default PfA;
