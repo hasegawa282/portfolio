@@ -138,7 +138,7 @@ export default function PfTimeLine() {
         paperProps={{
           title: '長期インターンシップ', 
           sub_title: 'recruit', 
-          text: '1ヶ月間のインターンシップに参加しました。フロントエンドテストに関してガッツリ取り組み、ベストプラクティスを得ることができました。技術力が非常に高く成長を感じました。'
+          text: '1ヶ月間のインターンシップに参加しました。フロントエンドテストに関してガッツリ取り組み、VRTというベストプラクティスを体験しました。技術的な成長を感じました。あとランチが美味しかったです。'
         }}
         icon={<Keyboard style={{color: 'black'}}/>}
         dateStart="2022/11"
