@@ -1,0 +1,18 @@
+{
+    "eslint.validate": ["javascript", "typescript"],
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "[yaml]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
