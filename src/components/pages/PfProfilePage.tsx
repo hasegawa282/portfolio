@@ -14,7 +14,7 @@ const PfProfilePage: React.FC = () => {
         <ParentDiv>
             <PfTitle id='Profile'>Profile</PfTitle>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <PfCard style={cardStyle} is_white={true}>
+                <PfCard style={cardStyle} isWhite={true}>
                     <PfMiniTitle style={{ marginBottom: 15 }}>基本情報</PfMiniTitle>
                     <PfInformation field_name='Name' text_name='長谷川正樹(はせがわまさき)' />
                     <PfInformation

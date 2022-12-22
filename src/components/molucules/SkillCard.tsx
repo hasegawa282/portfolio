@@ -27,7 +27,7 @@ const SkillCard: React.FC<SkillCardProps> = (props) => {
         overflow: 'hidden',
     };
     return (
-        <StyledPfCard {..._props} is_white={true}>
+        <StyledPfCard {..._props} isWhite={true}>
             <div>経験年数：{_props.date}</div>
             <PfRating {..._props.rating_props} />
             <HoverText text={_props.name} />

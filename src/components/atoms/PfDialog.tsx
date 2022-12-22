@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Dialog from '@mui/material/Dialog';
+import Dialog, { DialogProps } from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -8,12 +8,12 @@ import { useTheme } from '@mui/material/styles';
 import { Box, Button, DialogActions } from '@mui/material';
 import styled from 'styled-components';
 
-export interface PfDialogProps {
+export interface PfDialogProps extends DialogProps {
     children?: React.ReactNode;
     title?: string;
     onClose: () => void;
     open: boolean;
-    is_white?: boolean;
+    isWhite?: boolean;
 }
 
 const PfDialog: React.FC<PfDialogProps> = (props) => {
@@ -27,7 +27,7 @@ const PfDialog: React.FC<PfDialogProps> = (props) => {
             onClose={props.onClose}
             aria-labelledby='responsive-dialog-title'
             maxWidth={'md'}
-            is_white={props.is_white}
+            isWhite={props.isWhite}
             sx={{ border: '5px solid black' }}
         >
             <DialogTitle id='responsive-dialog-title'>
@@ -45,8 +45,6 @@ const PfDialog: React.FC<PfDialogProps> = (props) => {
     );
 };
 
-const StyledDialog = styled(Dialog)<{
-    is_white?: boolean;
-}>``;
+const StyledDialog = styled(({ isWhite, ...props }: PfDialogProps) => <Dialog {...props} />)``;
 
 export default PfDialog;

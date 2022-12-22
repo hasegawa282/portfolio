@@ -20,7 +20,7 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.up('md'));
     return (
-        <StyledTimelineItem matches={matches}>
+        <StyledTimelineItem>
             {matches && (
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0', display: matches ? 'block' : 'inline-block' }}
@@ -47,11 +47,11 @@ const PfTimelineItem: React.FC<PfTimelineItemProps> = (props) => {
     );
 };
 
-const StyledTimelineItem = styled(TimelineItem)<{
-    matches?: boolean;
-}>`
+const StyledTimelineItem = styled(({ isMd, ...props }: { isMd?: boolean } & TimelineItemProps) => (
+    <TimelineItem {...props} />
+))`
     &:before {
-        content: ${(p) => (p.matches ? '' : 'none')} !important;
+        content: ${(p) => (p.isMd ? '' : 'none')} !important;
     }
 `;
 

@@ -14,7 +14,7 @@ export interface ProductDetailDialogProps extends PfDialogProps {
 
 const ProductDetailDialog: React.FC<ProductDetailDialogProps> = (props) => {
     return (
-        <PfDialog {...props} is_white={true}>
+        <PfDialog {...props} isWhite={true}>
             <StyledChildren>
                 {props.type === 'IMAGE' && <Img src={props.src} />}
                 {props.type === 'VIDEO' && <Video src={props.src} muted={true} controls={true} />}

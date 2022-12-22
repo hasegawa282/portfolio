@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
     };
     return (
         <>
-            <StyledPfCard {..._props} is_white={true} onClick={() => setOpen(true)}>
+            <StyledPfCard {..._props} isWhite={true} onClick={() => setOpen(true)}>
                 <h4>{props.title}</h4>
                 {props.type === 'IMAGE' && <Img src={props.src} />}
                 {props.type === 'VIDEO' && <Video src={props.src} muted={true} controls={false} autoPlay={true} />}
