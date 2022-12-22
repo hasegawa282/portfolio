@@ -128,7 +128,7 @@ export default function PfTimeLine() {
         paperProps={{
           title: '長期インターンシップ', 
           sub_title: 'pixiv', 
-          text: 'pixivのエンジニアは技術力が非常に高かったです。私自身1ヶ月半コードレビューをしていただき、フロントエンドの技術レベルが1つ上がった気がします。人柄も含めて本当にいい会社だと感じたので、興味のある方は是非インターンシップに参加してみてください。'
+          text: 'pixivのエンジニアは技術力が非常に高かったです。私自身1ヶ月半コードレビューをしていただき、フロントエンドの技術レベルが1つ上がった気がします。人柄も含めて本当にいい会社だと感じたので、興味のある方は是非インターンシップに参加してみてくださいt 。'
         }}
         icon={<Keyboard/>}
         dateStart="2022/10"
@@ -138,7 +138,7 @@ export default function PfTimeLine() {
         paperProps={{
           title: '長期インターンシップ', 
           sub_title: 'recruit', 
-          text: ''
+          text: '1ヶ月間のインターンシップに参加しました。フロントエンドテストに関してガッツリ取り組み、ベストプラクティスを得ることができました。技術力が非常に高く成長を感じました。'
         }}
         icon={<Keyboard style={{color: 'black'}}/>}
         dateStart="2022/11"
