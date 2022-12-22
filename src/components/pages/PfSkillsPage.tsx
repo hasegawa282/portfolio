@@ -64,18 +64,6 @@ const skills = [
         name: 'Github',
     },
     {
-        src: "/images/bootstrap.png",
-        date: '1年未満',
-        value: 1,
-        name: 'BootstrapJS',
-    },
-    {
-        src: "/images/Materil-UI.png",
-        date: '1年未満',
-        value: 1,
-        name: 'Material UI',
-    },
-    {
         src: "/images/flutter1.png",
         date: '3ヶ月',
         value: 2,
@@ -83,7 +71,7 @@ const skills = [
     },
     {
         src: "/images/gcp.png",
-        date: '1年未満',
+        date: '2ヶ月',
         value: 1,
         name: 'Google Vision API',
     },
@@ -95,13 +83,13 @@ const skills = [
     },
     {
         src: "/images/nextjs.png",
-        date: '1年未満',
+        date: '2ヶ月',
         value: 1,
         name: 'NextJS',
     },
     {
         src: "/images/firebase.png",
-        date: '1年未満',
+        date: '2ヶ月',
         value: 1,
         name: 'Firebase',
     },
@@ -113,7 +101,7 @@ const skills = [
     },
     {
         src: "/images/azure.png",
-        date: '1年未満',
+        date: '1ヶ月',
         value: 1,
         name: 'Azure',
     },
@@ -122,6 +110,12 @@ const skills = [
         date: '3ヶ月',
         value: 2,
         name: 'Dart',
+    },
+    {
+        src: "/images/storybook.png",
+        date: '1ヶ月',
+        value: 1,
+        name: 'Storybook',
     },
 ]
 
