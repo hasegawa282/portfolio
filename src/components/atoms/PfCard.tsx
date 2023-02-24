@@ -11,12 +11,14 @@ const PfCard: React.FC<PfCardProps> = (props) => {
     return <StyledCard {...props} />;
 };
 
-const StyledCard = styled(({ isWhite, disabled_scroll, ...props }: PfCardProps) => <Card {...props} />)`
+const StyledCard = styled(({ isWhite: _isWhite, disabled_scroll: _disabled_scroll, ...props }: PfCardProps) => (
+    <Card {...props} />
+))`
     min-width: 350px;
-    ${(props) => `
-        overflow: ${props.disabled_scroll ? 'hide' : 'scroll'};
-        background-color: ${props.isWhite ? 'white' : 'undefined'};
-        color: ${props.isWhite ? 'black' : 'undefined'};
+    ${({ isWhite, disabled_scroll }) => `
+        overflow: ${disabled_scroll ? 'hide' : 'scroll'};
+        background-color: ${isWhite ? 'white' : 'undefined'};
+        color: ${isWhite ? 'black' : 'undefined'};
     `}
     display: flex;
     flex-direction: column;
