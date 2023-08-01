@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import { LaptopMac, School, HistoryEdu, Keyboard } from '@mui/icons-material';
+import { LaptopMac, School, HistoryEdu, Business, Keyboard } from '@mui/icons-material';
 import PfTimelineItem from './PfTimelineItem';
 import { useMediaQuery, useTheme } from '@mui/material';
 
@@ -143,6 +143,25 @@ export default function PfTimeLine() {
                 icon={<Keyboard style={{ color: 'black' }} />}
                 datestart='2022/11'
                 dateend='12'
+            />
+            <PfTimelineItem
+                paperProps={{
+                    title: '開発バイト',
+                    sub_title: 'Dokosore',
+                    text: '友達の会社にエンジニアとして参加しています。',
+                }}
+                icon={<Business />}
+                datestart='2023/6'
+                dateend='2024/2'
+            />
+            <PfTimelineItem
+                paperProps={{
+                    title: '入社予定',
+                    sub_title: 'DeNA',
+                    text: 'インターンなどを通したくさんの企業に参画させていただきましたが、最終的にDeNAを選ばせていただきました。レベルが高く刺激的な環境が楽しみです。',
+                }}
+                icon={<Business style={{ color: 'black' }} />}
+                datestart='2024/4'
             />
         </Timeline>
     );
